@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CommitCat</title>
+  <link rel="icon" sizes="16x16" href="https://commitcat.com/commitcat-icon-16.png" />
+  <link rel="icon" sizes="32x32" href="https://commitcat.com/commitcat-icon-32.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="https://commitcat.com/commitcat-icon-152.png" />
+  <!-- Neo둥근모 -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/neodgm/neodgm-webfont@1.600/neodgm/style.css">
+
+  <style>
+    :root {
+      --main-color: #00ff00;
+      --bg-color: #000000;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background-color: var(--bg-color);
+      color: var(--main-color);
+      font-family: 'NeoDunggeunmo';
+      line-height: 1.7;
+      padding: 0;
+    }
+
+    header {
+      padding: 40px 20px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .cat-image {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .cat-image img {
+      width: 280px;
+      max-width: 100%;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    .screenshots {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      overflow-x: auto;
+      flex-wrap: nowrap;
+      padding-bottom: 10px;
+    }
+
+    .screenshots img {
+      flex: 1 1 auto;
+      width: 200px;
+      min-width: 120px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+    }
+
+    .lang-switcher {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 0.9em;
+        z-index: 100;
+    }
+
+    .lang-switcher a {
+        color: #00ff00;
+        text-decoration: none;
+        margin: 0 5px;
+    }
+
+    .lang-switcher a:hover {
+        text-decoration: underline;
+    }
+
+    ul {
+      list-style: decimal;
+      padding-left: 1.2em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px 60px;
+    }
+
+    footer img {
+      width: 160px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .screenshots img {
+        width: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Language switch -->
+  <div class="lang-switcher">
+    <a href="/ko/">🇰🇷 한국어</a> | <a href="/en/">🇺🇸 English</a>
+  </div>
+
+  <header>
+    <h1>🐾 CommitCat</h1>
+  </header>
+
+  <main>
+    <div class="cat-image">
+      <img src="/icons/commitcat-icon.png" alt="Commit Cat Logo" />
+    </div>
+
+    <section>
+      <p>
+        CommitCat is a simple timer app that uses adorable pixel-style cats and your latest GitHub commits.<br />
+        (People often underestimate how much motivation cuteness can provide!)
+      </p>
+    </section>
+
+    <section class="screenshots">
+      <img src="screenshot1.png" alt="App Screenshot 1" />
+      <img src="screenshot2.png" alt="App Screenshot 2" />
+      <img src="screenshot3.png" alt="App Screenshot 3" />
+      <img src="screenshot4.png" alt="App Screenshot 4" />
+    </section>
+
+    <section>
+      <h2>📌 How to Use</h2>
+      <ul>
+        <li>Connect your GitHub account (you can also use the app without linking it).</li>
+        <li>Tap the Start button to begin the timer.</li>
+        <li>Code for 30 minutes and push a commit to GitHub.</li>
+        <li>Tap the Stop button, and the cat will let you know whether you succeeded or not!</li>
+      </ul>
+    </section>
+
+    <section>
+      <p>
+        (Note: The cat moves every time you press a button!)<br /><br />
+        If you're looking to build a consistent development habit, we hope you'll give CommitCat a try for fun.<br />
+        Feedback is always welcome!<br />
+        We'll keep improving it to help developers get a little boost of motivation to get started.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <a href="https://apps.apple.com/kr/app/commitcat/id6670413409" target="_blank">
+      <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" />
+    </a>
+  </footer>
+</body>
+</html>
+
